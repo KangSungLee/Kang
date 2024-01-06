@@ -26,22 +26,45 @@ console.log(getRealAge(birtday));
 //      2023, 2024, ..., 2040
 // isDivisible(year)를 만들어서 해결하세요.
 
-for (let i = 2023; i <= 2040; i++){
-console.log(i[0])
+
+
+function isDivisible(year){
+    if ((year + 1) % (year - 2000) == 0)
+        console.log(year-2000, year+1, 'good')
+    else
+        console.log(year-2000, year+1, 'bye')
+    
 }
-
-
-
-
-
-
-
+for (let i = 2023; i <2040; i++)
+        isDivisible(i)
+//b-----------------------------------
+/* for (let i = 2023; i <2040; i++){
+    if ((i + 1) % (i - 2000) == 0)
+        console.log(i-2000, i+1, 'good')
+    else
+        console.log(i-2000, i+1, 'bye')
+} */
 // 3. 어레이를 매개변수로 받아서 합의 제곱과 제곱의 합의 차이를 구하는 함수를 만들고,
 // [24, 67, 45, 97, 43]의 결과를 출력하세요.
 
-/* // 3. 배열 원소의 제곱의 합
-let sampleArray = [43, 17, 25, 36, 98, 73];
+
 function sum0fSquare(arr) {
+    let sumMax = 0
+    let sumArray = 0
+    for (let i = 0; i < arr.length; i++)    
+    sumMax += arr[i]                        
+    sumMax = sumMax * sumMax
+    for(let k = 0; k < arr.length; k++)
+    sumArray += arr[k] * arr[k]
+    console.log(sumMax)
+    console.log(sumArray)
+    return sumMax - sumArray 
+    
+}
+let sampleArray = [43, 17, 25, 36, 98, 73];
+console.log(sum0fSquare(sampleArray))
+
+/* function sum0fSquare(arr) {
     let sum = 0;
     for (let i = 0; i < arr.length; i++)
         sum += arr[i] * arr[i];
