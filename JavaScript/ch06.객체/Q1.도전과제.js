@@ -28,14 +28,15 @@ console.log(getRealAge(birtday));
 
 
 
+
 function isDivisible(year){
     if ((year + 1) % (year - 2000) == 0)
-        console.log(year-2000, year+1, 'good')
+    console.log(year-2000, year+1, 'good')
     else
-        console.log(year-2000, year+1, 'bye')
-    
+    console.log(year-2000, year+1, 'bye')
 }
-for (let i = 2023; i <2040; i++)
+
+for (let i = 2023; i <2101; i++)
         isDivisible(i)
 //b-----------------------------------
 /* for (let i = 2023; i <2040; i++){
@@ -61,7 +62,7 @@ function sum0fSquare(arr) {
     return sumMax - sumArray 
     
 }
-let sampleArray = [43, 17, 25, 36, 98, 73];
+let sampleArray = [24, 67, 45, 97, 43];
 console.log(sum0fSquare(sampleArray))
 
 /* function sum0fSquare(arr) {
