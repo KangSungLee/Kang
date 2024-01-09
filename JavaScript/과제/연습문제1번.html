@@ -5,6 +5,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,14 +19,14 @@
                 let result = document.getElementById('result');
                 let sum = [];
 
-                if(num1 >= 1 && num1 <= 20 && num2 >= 10 && num2 <=30 && num1 + 4 < num2){
-                    for (let i = num1; i <= num2; i++){
+                if (num1 < num2 - 4 && num1 >= 1 && num1 <= 20 && num2 >= 10 && num2 <= 30) {
+                    for (let i = num1; i <= num2; i++) {
                         sum.push(2 ** i);
-                    
-                    result.innerHTML =sum.join(',');
+
+                        result.innerHTML = sum.join(',');
                     }
-                }else 
-                result.innerHTML = '값이틀렸습니다.';
+                } else
+                    result.innerHTML = '값이틀렸습니다.';
             }
         }
     </script>
