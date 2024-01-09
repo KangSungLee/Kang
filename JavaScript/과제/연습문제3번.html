@@ -11,14 +11,32 @@ console.log(numbers)
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- 
+    <script>
+        window.onload = function () {
+            let btn = document.getElementById('btn');
+            btn.onclick = function () {
+                let text = document.getElementById('text').value;
+                let span = document.getElementById('span');
+                text = text.split(';');
+                Number.text;
+                text.sort(function (a, b) {
+                    return b - a;
+                });
+                span.innerHTML = text.join(',');
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
-    <button id="btn"></button>
+    <input type="text" id="text">
+    <button id="btn">확인</button>
+    <span id="span"></span>
 </body>
+
 </html>
