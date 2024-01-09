@@ -1,4 +1,4 @@
-/* // 연습문제
+// 연습문제
 // 1. 1에서 1000사이에 0은 몇번, 1은 몇번,  ..., 9는 몇번 사용되었는가
 
 let numStr = '';
@@ -21,7 +21,7 @@ for (let i = 0; i < numStr.length; i++){
     let num = Number(numStr[i]);
     countArr[num]++;
 }
-console.log(countArr); */
+console.log(countArr);
 
 
 

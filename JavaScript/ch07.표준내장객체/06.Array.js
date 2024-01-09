@@ -80,8 +80,7 @@ console.log(str.split('').reverse().join(''));
 
 // 4-2. 어떤 문자열이 회문(palindrome)인간?
 function isPalinderome(str){
-    
-        let reverseStr = str.split('').reverse().join('')
+    let reverseStr = str.split('').reverse().join('')
     return str = reverseStr;
 }
 console.log(isPalinderome('우영우'));
