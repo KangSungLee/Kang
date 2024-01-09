@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>생성순서</title>
+    <title>생성순서오류</title>
     <script>
-        alert('Head alert');
+        document.querySelector('h1').style.backgroundColor = 'yellow';
+        document.getElementsByTagName('h2').style.color = 'red';
     </script>
 </head>
 <body>
     <h1>Header 1</h1>
-    <script>alert('Body 1')</script>
     <h2>Header 2</h2>
-    <script>alert('Body 2')</script>
 </body>
 </html>
