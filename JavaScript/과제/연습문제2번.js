@@ -3,8 +3,8 @@ let text = "the grown-ups' response, this time, was to advise me to lay aside my
 let texts = text.replace(/[^A-Z a-z]/g, '');
 let textss = texts.split(' ');
 let num = 0
-for(let i of textss)
-    if(i == "the")
+for (let i of textss)
+    if (i == "the")
         num++
-    
+
 console.log(num)
