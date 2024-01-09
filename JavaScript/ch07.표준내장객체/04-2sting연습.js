@@ -11,7 +11,7 @@ console.log(`하루동안 3이 표시되는 시간은 ${displayTime}초 입니�
 
 // 3.
 function isPalindrome(s){
-    return s == s.split('').reverse().join('');
+    return s == s.split('');
 }
 let maxPal = 0, max1 = 0, max2 = 0;
 for (let i = 100; i <= 999; i++){
