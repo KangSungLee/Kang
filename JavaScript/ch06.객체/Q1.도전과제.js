@@ -30,16 +30,13 @@ console.log(getRealAge(birtday));
 
 
 function isDivisible(year){
-    let ik = year - 2000
-    if (ik >= 100)
-        ik -= 100
-    if ((year + 1) % (ik) == 0) 
-    console.log(ik, year+1, 'good')
+    if ((year + 1) % (year - 2000) == 0)
+        console.log(year-2000, year+1, 'good')
     else
-    console.log(ik, year+1, 'bye')
+        console.log(year-2000, year+1, 'bye')
+    
 }
-
-for (let i = 2023; i <2300; i++)
+for (let i = 2023; i <2040; i++)
         isDivisible(i)
 //b-----------------------------------
 /* for (let i = 2023; i <2040; i++){
