@@ -1,0 +1,42 @@
+<!-- 문제 1.
+정수 두 개를 입력 받아 (첫 번째 입력 값의 범위는 1~20, 두 번째 입력 값의 범위는 10~30이며 
+첫 번째 입력 값은 두 번째 입력 값보다 4 이상 작아야 합니다). 
+첫 번째 정수부터 두 번째 정수까지를 지수로 하는 2의 거듭제곱 배열을 출력하는 프로그램을 만드세요. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $('#btn').click(function(e){
+                let num1 = Number($('#num1').val());
+                let num2 = Number($('#num2').val());
+                let sum = [];
+
+                if (num1 <= num2 - 4 && num1 >= 1 && num1 <= 20 && num2 >= 10 && num2 <= 30) {
+                    for (let i = num1; i <= num2; i++) {
+                        sum.push(2 ** i);
+
+                        $('#result').text(sum.join(','));
+                    }
+                } else
+                $('#result').text('값이틀렸습니다.');
+            }
+        )});
+    </script>
+</head>
+
+<body style="margin: 50px;">
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button id="btn">계산</button>
+    <br>
+    <span id="result"></span>
+</body>
+
+</html>
