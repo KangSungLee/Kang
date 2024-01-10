@@ -39,10 +39,13 @@ console.log(numbers)
 console.log(cars)
 
 // 내림차순(Descending order)
+numbers.sort((a, b) => b - a);
+
 numbers.sort(function(a, b){
     return b - a;
 });
 console.log(numbers)
+
 cars.sort(function(a, b){
     if ( a < b)
         return 1;
