@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Focus</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $('#num1').on('keyup', function(e){
+                if ($(this).val().length >= 6)
+                    $('#num2').focus();
+            });
+            $('#num2').on('keyup', function(e){
+                if (e.keyCode == 8 && $(this).val().length == 0)
+                    $('#num1').focus();
+            })
+        });
+    </script>
+</head>
+<body>
+    <p>주민등록번호</p> 
+    <input id="num1" type="text" maxlength="6" autofocus>
+    <span>-</span>
+    <input id="num2" type="text" maxlength="7" >
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주민등록</title>
+    <script>
+        window.onload = function() {
+            let num1 = document.getElementById('num1');
+            let num2 = document.getElementById('num2');
+
+            num1.addEventListener('keyup', function (e) {
+                if (num1.value.length >= 6)
+                    num2.focus();
+            });
+
+            num2.addEventListener('keyup', function (e) {
+                if (e.keyCode == 8 && num2.value.length == 0)
+                    num1.focus();
+            });
+        }
+
+    </script>
+</head>
+<body>
+    <p>주민등록번호</p> 
+    <input id="num1" type="text" maxlength="6" autofocus>
+    <span>-</span>
+    <input id="num2" type="text" maxlength="7">
+</body>
+</html> -->
+
+
+
